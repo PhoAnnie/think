@@ -1,0 +1,266 @@
+/*####版面設計####*/
+
+body {
+	margin :24px 10px;
+	font-family: calibri light, '微軟正黑體', sans-serif;
+    background-color: #F8F8FF
+}
+
+
+
+
+/*L-size bigger than980px; m-size 640~979px; s-size smaller than 639px*/
+
+#container{
+	width: 960px;
+	margin: auto;
+}
+
+header {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+
+
+
+
+/* overflow:hidden 將多的區塊隱藏，版面比較好看 */
+
+#Toppost{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+#oldnews {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+footer {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+/*細節*/
+/*header logo*/
+
+#site{
+	float: left;
+}
+#site h1{
+	margin:0;
+}
+
+
+
+
+
+
+/* vertical-align: bottom 對齊底部，比較好看 */
+/* container設960，三分法原則，site img 設300-360都蠻好看的 */
+
+#site img{
+	vertical-align: bottom;
+	width:332px;
+}
+
+
+
+
+
+
+/* HEADER NAV */
+/* 可用google font 尋找喜歡的瀏覽器字體 https://fonts.google.com/ */
+/* padding和margin差異可看講義*/
+
+nav{
+	float: right;
+	font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* list-style-type: none 可把原本有序列表的點點取消*/
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+
+/* 用CSS做選單!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+
+/*  display: block 每個連結字體以區塊顯示*/
+
+
+/*  float: left margin-top 連結字體靠左向上對齊*/
+
+
+/*  text-decoration: none 取消底線*/
+
+
+/*  border-bottom: solid 3px transparent 製作一個透明的下底線*/
+
+
+/*  color請參考CSS色碼對照表 https://www.toodoo.com/db/color.html */
+
+nav li a {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: solid 3px transparent;
+    color: #000000;
+}
+
+
+/*  nav li a:hover 當滑鼠在連結文字上徘徊的時候 */
+
+nav li a:hover {
+    border-bottom-color: #444444;
+}
+
+
+/*  HEADERPOST 圖片*/
+
+
+/* vertical-align: bottom 對齊底部，比較好看 */
+
+
+/* container設960，三分法原則，headerpost設620-660都蠻好看的 */
+
+#Toppost img {
+    float: left;
+    vertical-align: bottom;
+    width: 960px;
+    margin-bottom: 10px
+}
+
+
+/*  HEADERPOST LEAD*/
+
+#Toppost #lead {
+    float: left;
+    width: 960px;
+    color: #ffffff;
+    margin-left: 25px;
+}
+
+#Toppost h2 {
+    margin: 20px 0;
+}
+
+#Toppost.more {
+    font-size: 18px;
+    font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+    text-align: right;
+}
+
+
+
+/* 用CSS寫按鈕!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+#Toppost{
+    background-color: #444444
+}
+
+
+
+
+
+/* 用CSS做漸層!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+
+
+
+/* ### FOOTER ###*/
+
+footer {
+    background-color: #444444;
+    padding: 5px;
+}
+
+footer p {
+    float: left;
+    margin-top: 10px;
+    color: #ffffff
+}
+
+#iconmenu {
+    float: left;
+}
+
+#iconmenu ul {
+    margin: 0;
+    padding: 3px 0 0;
+}
+
+#iconmenu li {
+    display: inline;
+    list-style-type: none;
+}
+
+#iconmenu img {
+    border: none;
+    width: 28px;
+}
+
+#submenu {
+    clear: both;
+    font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#submenu ul {
+    margin: 3px;
+    padding: 0;
+}
+
+#submenu li {
+    list-style-type: none;
+    float: left;
+}
+
+#submenu li a {
+    display: block;
+    width: auto;
+    border-right: solid 1px #ffffff;
+    text-align: center;
+    text-decoration: none;
+    color: #00AAAA;
+    font-weight: bold;
+    padding-right: 6px;
+    margin-right: 3px;
+}
+
+#submenu li:last-child a {
+    border: none;
+}
+
+#submenu li+li+li a {
+    border: none;
+}
+
+small {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
